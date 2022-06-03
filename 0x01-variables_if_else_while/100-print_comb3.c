@@ -7,25 +7,24 @@
 
 int main(void)
 {
-	int n;
-	int i;
+	int i, n;
 
-	for (n = 0; n <= 9; n++)
+	while (n > i)
 	{
-	for (i = 0; i <= 9; i++)
-	{
-		if (i > n)
+		for (i = 0; i <= 9; i++)
 		{
-		putchar(n + '0');
-		putchar (i + '0');
+			for (n = 0; n <= 0; n++)
+			{
+				putchar(i + '0');
+				putchar(n + '0');
 
-	if (!(n == 9 && i == 9))
-	{
-		putchar(',');
-		putchar(' ');
-	}
+				if (!(i == 9 && n == 9))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-	}
 	}
 	putchar('\n');
 	return (0);
