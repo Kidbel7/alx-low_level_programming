@@ -9,23 +9,19 @@ int main(void)
 {
 	int i, n;
 
-	while (n > i)
+	for (i = 0; i < 9; i++)
 	{
-		for (i = 0; i <= 9; i++)
+		for (n = i + 1; n < 10; n++)
 		{
-			for (n = 0; n <= 0; n++)
-			{
-				putchar(i + '0');
-				putchar(n + '0');
+			putchar((i % 10) + '0');
+			putchar((n % 10) + '0');
 
-				if (!(i == 9 && n == 9))
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+			if (i == 8 && n == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
