@@ -11,10 +11,11 @@ int main(void)
 	int i;
 
 	for (n = 0; n <= 9; n++)
-	for (i > n)
 	{
 	for (i = 0; i <= 9; i++)
 	{
+		if (i > n)
+		{
 		putchar(n + '0');
 		putchar (i + '0');
 
@@ -23,6 +24,7 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 	}
+		}
 	}
 	}
 	putchar('\n');
