@@ -9,7 +9,7 @@ int main(void)
 {
 	int i, n;
 
-	for (i = 0; i < 98; i++)
+	for (i = 0; i <= 98; i++)
 	{
 		for (n = i + 1; n <= 99; n++)
 		{
