@@ -14,6 +14,8 @@ int main(void)
 	{
 	for (i = 0; i <= 9; i++)
 	{
+		if (i > n)
+	{
 		putchar(n + '0');
 		putchar (i + '0');
 
@@ -21,6 +23,7 @@ int main(void)
 	{
 		putchar(',');
 		putchar(' ');
+	}
 	}
 	}
 	}
