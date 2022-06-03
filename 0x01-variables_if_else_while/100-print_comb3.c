@@ -12,16 +12,17 @@ int main(void)
 
 	for (n = 0; n <= 9; n++)
 	{
-		for (i = 0; i <= 9; i++)
-		{
-			putchar(n + '0');
-	putchar (i + '0');
+	for (i = 0; i <= 9; i++)
+	{
+		putchar(n + '0');
+		putchar (i + '0');
+
 	if (!(n == 9 && i == 9))
 	{
 		putchar(',');
-	putchar(' ');
+		putchar(' ');
 	}
-		}
+	}
 	}
 	putchar('\n');
 	return (0);
