@@ -30,6 +30,6 @@ int main(void)
 		o = o + m;
 		m = o - m;
 	}
-	printf("\n";
+	printf("\n");
 	return (0);
 }
