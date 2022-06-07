@@ -1,1 +1,1 @@
-Print _putchar
+Learning C programing language.
