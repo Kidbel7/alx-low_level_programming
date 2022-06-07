@@ -1,4 +1,4 @@
 #define MAIN_H
 
-int _puthcar(char);
+int _putchar(char);
 void print_alphabet(void);
