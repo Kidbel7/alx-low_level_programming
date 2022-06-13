@@ -5,7 +5,7 @@
  * @str: string to be printed
  */
 
-void pust_half(char *str)
+void puts_half(char *str)
 {
 	int i, j, k;
 
