@@ -13,6 +13,7 @@ void puts_half(char *str)
 	while (i >= 0)
 	{
 		if (str[i] == '\0')
+			break;
 			i++;
 	}
 	if (i % 2 == 1)
