@@ -15,10 +15,10 @@ int main(void)
 	srand((unsigned int) time(&t));
 	while (j < 2772)
 	{
-		r = rand() % 128;
+		i = rand() % 128;
 		if ((i + j) > 2772)
-			break
-				j = j + i;
+			break;
+		j = j + i;
 		printf("%c", r);
 	}
 	printf("%c\n", (2772 - j));
