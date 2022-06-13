@@ -19,7 +19,7 @@ int main(void)
 		if ((i + j) > 2772)
 			break;
 		j = j + i;
-		printf("%c", r);
+		printf("%c", i);
 	}
 	printf("%c\n", (2772 - j));
 	return (0);
