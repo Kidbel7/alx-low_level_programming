@@ -8,7 +8,7 @@ int sqr(int n, int i);
  * Return: -1 if n doesn't have a naturl square root
  */
 
-int _sqrt_recursion(int n)
+int _sqrt_recursion(int n);
 {
 	if (n < 0)
 		return (-1);
