@@ -13,6 +13,8 @@ int sqr(int sq, int nu)
 		return (-1);
 	else if (sq * sq == nu)
 		return (sq);
+	else if (sq > nu / sq)
+		return (sqr(nu, sq - 1));
 	else
 		return (sqr(nu, sq + 1));
 }
