@@ -1,5 +1,7 @@
 #include "main.h"
 
+int prime_number(int n, int i);
+
 /**
  * is_prime_number - returns 1 if the input integeris a prime number
  * @n: prime number
