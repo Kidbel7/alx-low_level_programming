@@ -11,7 +11,7 @@ int sqr(int sq, int nu)
 {
 	if (sq * sq > nu)
 		return (-1);
-	else if ((sq * sq) == nu)
+	else if (sq * sq == nu)
 		return (sq);
 	else
 		return (sqr(nu, sq + 1));
@@ -29,8 +29,6 @@ int _sqrt_recursion(int n)
 
 	if (n < 0)
 		return (-1);
-	else if (n == 1)
-		return (1);
 	else
 		return (sqr(n, sq));
 }
