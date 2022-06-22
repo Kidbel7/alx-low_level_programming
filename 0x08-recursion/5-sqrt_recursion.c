@@ -9,7 +9,7 @@
 
 int sqr(int sq, int nu)
 {
-	if (sq == nu /2 )
+	if (sq * sq > nu)
 		return (-1);
 	else if ((sq * sq) == nu)
 		return (sq);
