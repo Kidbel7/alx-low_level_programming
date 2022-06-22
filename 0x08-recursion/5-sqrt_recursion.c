@@ -1,6 +1,6 @@
 #include "main.h"
 
-int sqr(int sq, int nu);
+int sqr(int n, int i);
 
 /**
  * _sqrt_recursion - returns the natural square root of a number
@@ -12,27 +12,23 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	else if (n == 1)
-		return (1);
 	else
-		return (sqr(n, sq));
+		return (sqr(n, 0));
 }
 
 /**
  * sqr - returns the natural square root of a number
- * @sq: square root
- * @nu: number
+ * @n: number
+ * @i: iterator
  * Return: -1 if n doesn't have a naturl square root
  */
 
-int sqr(int sq, int nu)
+int sqr(int n, int i)
 {
-	if (sq * sq > nu)
+	if (i * i > n)
 		return (-1);
-	else if (sq * sq == nu)
-		return (sq);
-	else if (sq > nu / sq)
-		return (sqr(nu, sq - 1));
+	else if (i * i == n)
+		return (i);
 	else
-		return (sqr(nu, sq + 1));
+		return (sqr(n, i + 1));
 }
