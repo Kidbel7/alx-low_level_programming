@@ -7,14 +7,14 @@
  * Return: -1 if n doesn't have a naturl square root
  */
 
-int sqrt(int sq, int nu)
+int sqr(int sq, int nu)
 {
 	if (sq * sq > nu)
 		return (-1);
 	else if (sq * sq == nu)
 		return (sq);
 	else
-		return (sqrt(nu, sq + 1));
+		return (sqr(nu, sq + 1));
 }
 
 /**
@@ -25,6 +25,8 @@ int sqrt(int sq, int nu)
 
 int _sqrt_recursion(int n)
 {
+	int sq = 0;
+
 	if (n < 0)
 		return (-1);
 	else
