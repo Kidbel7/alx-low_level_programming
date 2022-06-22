@@ -25,10 +25,12 @@ int sqr(int sq, int nu)
 
 int _sqrt_recursion(int n)
 {
-	int sq = 0;
+	int sq = 1;
 
 	if (n < 0)
 		return (-1);
+	else if (n == 1)
+		return (1);
 	else
 		return (sqr(n, sq));
 }
