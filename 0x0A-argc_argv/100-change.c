@@ -9,33 +9,43 @@
  * Return: 0 if pass, 1 otherwise
  */
 
-int main(int __attribute__((unused)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int i, j, k, n = 0;
-	int c[5] = {25, 10, 5, 2, 1};
+	int i, j = 0;
 
 	if (argc != 2)
 	{
-		puts("Error\n");
+		printf("Error\n");
 		return (1);
 	}
+
 	i = atoi(argv[1]);
-	if (i <= 0)
+
+	while (i > 0)
 	{
-		puts("0\n");
-		return (1);
-	}
-	else
-	{
-		for (j = 0; j < 5; j++)
+		j++;
+		if ((i - 25) >= 0)
 		{
-			k = i / c[j];
-			i -= k * c[i];
-			n += k;
-			if (i == 0)
-				break;
+			i -= 25;
+			continue;
 		}
+		if ((i - 10) >= 0)
+		{
+			i -= 10;
+			continue;
+		}
+		if ((i - 5) >= 0)
+		{
+			i -= 5;
+			continue;
+		}
+		if ((i - 2) >= 0)
+		{
+			i -= 2;
+			continue;
+		}
+		i--;
 	}
-	printf("%d\n", n);
+	printf("%d\n", j);
 	return (0);
 }
