@@ -11,30 +11,31 @@
 
 int main(int __attribute__((unused)) argc, char *argv[])
 {
-	int i, j, k;
-	int c[] = {25, 10, 5, 2, 1};
+	int i, j, k, n = 0;
+	int c[5] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
-		printf("Error\n");
+		puts("Error\n");
 		return (1);
 	}
 	i = atoi(argv[1]);
-	k = 0;
-	if (i < 0)
+	if (i <= 0)
 	{
-		printf("0\n");
-		return (0);
+		puts("0\n");
+		return (1);
 	}
-	for (j = 0; j < 5 && i >= 0; j++)
+	else
 	{
-		while (i >= c[j])
-			;
+		for (j = 0; j < 5; j++)
 		{
-			k++;
-			i -= c[j];
+			k = i / c[j];
+			i -= k * c[i];
+			n += k;
+			if (i == 0)
+				break;
 		}
 	}
-	printf("%d\n", k);
+	printf("%d\n", n);
 	return (0);
 }
