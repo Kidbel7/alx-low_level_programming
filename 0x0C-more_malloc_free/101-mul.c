@@ -2,17 +2,17 @@
 #include <stdlib.h>
 #include "main.h"
 
-int digit(char *s);
+int is_digit(char *s);
 int _strlen(char *s);
 void errors(void);
 int main(int argc, char *argv[]);
 
 /**
- * digit - checks if a string contains a non-digit char
+ * is_digit - checks if a string contains a non-digit char
  * @s: string
  * Return: 0
  */
-int digit(char *s)
+int is_digit(char *s)
 {
 	int i = 0;
 
@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 	int l1, l2, l, i, c, d1, d2, *r, a = 0;
 
 	s1 = argv[1], s2 = argv[2];
-	if (argc != 3 || !digit(s1) || !digit(s2))
+	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
 		errors();
 	l1 = _strlen(s1);
 	l2 = _strlen(s2);
