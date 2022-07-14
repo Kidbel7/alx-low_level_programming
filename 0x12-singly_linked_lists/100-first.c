@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+/**
+ * print_text - prints a string
+ */
+
+void print_text(void) __attribute__((constructor));
+
+void print_text(void)
+{
+	printf("You're beat! and yet, you must allow, \n
+			I bore my house upon my back! \n");
+}
